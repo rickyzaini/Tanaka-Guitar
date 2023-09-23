@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Public Sans";
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vw;
+    background-color: #F3976F;
+}
+
+.logo img{
+    width: 10vw;
+    height: 10vw;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.navbar a{
+    width: 8vw;
+    height: 3vw;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: white;
+    margin-right: 1.5vw;
+}
+
+.button:hover a{
+    transition: 0.3s;
+    background-color: green;
+}
+
+.button:active a{
+    transition: 0.1s;
+    background-color: rgb(1, 45, 1)
+}
+
+
+/**/
+
+.head .title{
+    font-size: 1.5vw;
+    text-align: center;
+    padding: 2vw 0;
+    background: #e2e2e2;
+    border-bottom: 2px solid black;
+} 
+
+.tabcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.tabcontainer input[type="radio"]{
+    display: none;
+}
+
+.tabcontainer label{
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    box-sizing: border-box;
+    height: 5vw;
+    background: #e2e2e2;
+    font-weight: bold;
+    cursor: pointer;
+    border-right: 3px solid black;
+    border-bottom: 2px solid black;
+}
+
+.tabcontainer label:hover{
+    background-color: #FEA655;
+}
+
+label:last-of-type  {
+    border-right: 0;
+}
+
+.tabcontainer .tab{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    order: 1;
+    height: 118vw;
+    display: none;
+}
+
+.tabcontainer input[type='radio']:checked + label + .tab {
+    background: linear-gradient(#E34A27,#FEA655,#FFD98E,#909473);
+    display: block;
+}
+
+.tabcontainer input[type="radio"]:checked + label{
+    border-bottom: 0;
+    background-color: #E34A27;
+}
+
+.tabcontainer .tab .baris{
+    height: 55vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.tabcontainer .tab .item{
+    margin: 8vw;
+    width: 18vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.tabcontainer .tab .item .img-container{
+    position: relative;
+    width: 15vw;
+    height: 70vw;
+}
+
+.tabcontainer .tab .item .img-container img{
+    position: absolute;
+    width: 15vw;
+    height: 40vw;
+}
+
+.tabcontainer .tab .item .title {
+    position: relative;
+    margin-top: 37vw;
+    padding: 1.5vw 0;
+    width: 15vw;
+    text-align: center;
+}
+
+.tabcontainer .tab .item .price{
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+}
+
+.tabcontainer .tab .item .price img{
+    padding-right: 1vw;
+    width: 2vw;
+    height: 2vw;
+}
+
+.tabcontainer .tab .item span{
+    font-size: 1.7vw;
+    color: white;
+}
+
+footer{
+    width: 100%;
+    height: 14vw;
+    background-color:darksalmon;
+}
+
+.upperbox{
+    display: flex;
+    justify-content: space-evenly;
+    
+}   
+
+footer .title{
+    padding-top: 0.5vw;
+    font-size: 1.5vw;
+}
+
+.followUs{
+    height: 8vw;
+}
+
+.core{
+    padding-top: 0.4vw;
+    display: flex;
+    align-items: center;
+}
+
+.core p{
+    margin-top: -0.3vw;
+    font-size: 1.2vw;
+}
+
+.core a img{
+    width: 3vw;
+    height: 3vw;
+}
+
+.copyright{
+    font-size: 1.2vw;
+    padding-top: 1.2vw;
+    border-top: 1px solid black;
+    margin-top: 0.6vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* .tabcontainer .tab span{
+    width: 10;
+    
+    text-align: center;
+} */
+
+/* .tabcontainer .buttons{
+    height: 15%;
+
+}
+
+.tabcontainer .buttons button{
+    width: 20%;
+    height: 100%;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 2vw;
+    background-color: #eee;
+}
+
+.tabcontainer .buttons button:hover{
+    background-color: #d7d4d4;
+}
+
+.tabcontainer .tab{
+    height: 85%;
+    background-color: gray;
+    color:white;
+    text-align: center;
+    padding-top: 10vw;
+    opacity:0;
+}
+
+.tabcontainer .buttons button:active .tab{
+    opacity:1;
+} */
+
+@media screen and (max-width: 800px){
+    header{
+        width: 100%;
+        height: 20vw;
+    }
+
+    .logo img{
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .navbar .button a{
+        width: 14vw;
+        height: 10vw;
+        font-size: 3vw;
+    }
+
+    .navbar .button{
+        margin-top: 0.5vw;
+        margin-right: 0.5vw;
+    }
+
+    .container{
+        height: 310vw;
+    }
+
+    .head .title{
+        font-size: 2.5vw;
+    }
+
+    .tabcontainer .tab .baris .item {
+        width: 50vw;
+        align-items: center;
+    }
+
+    .tabcontainer .tab .baris .item .title{
+        margin-top: 40vw;
+        width: 50vw;
+    }
+
+    .tabcontainer .tab .baris .item .price{
+        width: 30vw;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tabcontainer .tab .baris .item .price img{
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .tabcontainer label{
+        font-size: 2.6vw;
+    }
+
+    .tabcontainer .tab .item span{
+        width: 21vw;
+        font-size: 4vw;
+    }
+
+    .tabcontainer .tab {
+        display: flex;
+        flex-direction: column;
+        height: 370vw;
+        display:none;
+    }
+
+    .tabcontainer .tab .baris{
+        height: 180vw;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .tabcontainer .tab .item{
+        margin: 0;
+    }
+
+    footer{
+        height: 25vw;
+    }
+    
+    .upperbox{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    footer .title{
+        font-size: 4vw;
+    }
+
+    .core{
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .core p{
+        font-size: 4vw;
+    }
+
+    .copyright{
+        width: 100%;
+        height: 6vw;
+        font-size: 3vw;
+        padding-top: 2.2vw;
+        background-color: orange;
+    }
+}
